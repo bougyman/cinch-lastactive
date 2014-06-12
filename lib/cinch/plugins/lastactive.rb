@@ -10,22 +10,23 @@ module Cinch::Plugins
 
     def initialize(*args)
       super
-      @time = Time.now
+      @times = Hash.new(Time.now)
     end
 
     def join_respond(m)
       return if m.user.nick == @bot.nick
-      m.reply "Hello, #{m.user.nick}. The last activity was #{time_passed} ago."
+      m.reply "Hello, #{m.user.nick}. The last activity was "\
+              "#{time_passed(m.channel.name)} ago."
     end
 
     def update_time(m)
-      @time = Time.now
+      @times[m.channel.name] = Time.now
     end
 
     private
 
-    def time_passed
-      Cinch::Toolbox.time_format(Time.now - @time)
+    def time_passed(channel)
+      Cinch::Toolbox.time_format(Time.now - @times[channel])
     end
   end
 end
