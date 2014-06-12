@@ -1,6 +1,14 @@
 # Cinch::Lastactive
 
-TODO: Write a gem description
+[![Gem Version](https://badge.fury.io/rb/cinch-lastactive.png)](http://badge.fury.io/rb/cinch-lastactive)
+[![Dependency Status](https://gemnasium.com/bhaberer/cinch-lastactive.png)](https://gemnasium.com/bhaberer/cinch-lastactive)
+[![Build Status](https://travis-ci.org/bhaberer/cinch-lastactive.png?branch=master)](https://travis-ci.org/bhaberer/cinch-lastactive)
+[![Coverage Status](https://coveralls.io/repos/bhaberer/cinch-lastactive/badge.png?branch=master)](https://coveralls.io/r/bhaberer/cinch-lastactive?branch=master)
+[![Code Climate](https://codeclimate.com/github/bhaberer/cinch-lastactive.png)](https://codeclimate.com/github/bhaberer/cinch-lastactive)
+
+Cinch plugin to inform new channel joiners when the last activity was.
+
+Note: This will be spammy in high traffic rooms!
 
 ## Installation
 
