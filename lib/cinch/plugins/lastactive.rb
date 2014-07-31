@@ -3,6 +3,8 @@ require 'cinch/toolbox'
 
 module Cinch
   module Plugins
+    # Cinch Plugin to informing joining users how long ago the last line
+    #   of text was spoken.
     class LastActive
       include Cinch::Plugin
 
