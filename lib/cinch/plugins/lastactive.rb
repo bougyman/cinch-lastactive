@@ -19,7 +19,7 @@ module Cinch
       def join_respond(m)
         return if m.user.nick == @bot.nick
         return if m.channel.nil?
-        m.reply "Hello, #{m.user.nick}. The last activity was " \
+        m.user.reply "Hello, #{m.user.nick}. Welcome to #{m.channel.name}. The last activity was " \
                 "#{time_passed(m.channel.name)} ago."
       end
 
